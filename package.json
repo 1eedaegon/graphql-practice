@@ -4,6 +4,9 @@
   "description": "Movie API with GraphQL",
   "main": "index.js",
   "repository": "https://github.com/1eedaegon/graphql-practice",
-  "author": "1eedaegon",
-  "license": "MIT"
+  "author": "1eedaegon<d8726243@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
 }
