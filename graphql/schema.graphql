@@ -1,8 +1,14 @@
-type lee {
+type Person {
+  id: String!
   name: String!
-  age: Int
-  gender: String!
+  age: Int!
+  gender: String
 }
+
 type Query {
-  person: lee!
+  people: [Person]!
+  person(id: String!): Person
+}
+type Mutation {
+  addPerson(name: String!, age: Int!, gender: String): Person!
 }
