@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
+// Users
 const people = [];
-
 export const getPeople = () => people;
 export const getById = (id) => people.filter((person) => person.id === id)[0];
 export const addPerson = (name, age, gender) => {
@@ -16,13 +16,10 @@ export const delPerson = (id) => {
   }
   return false;
 };
-
 const mockPeople = [
   { id: "0", name: "lee", age: 30, gender: "male" },
   { id: "1", name: "kim", age: 21, gender: "female" },
   { id: "2", name: "park", age: 29, gender: "male" },
   { id: "3", name: "lee", age: 25, gender: "female" },
 ];
-mockPeople.map(({ name, age, gender }) =>
-  console.log(addPerson(name, age, gender))
-);
+mockPeople.map(({ name, age, gender }) => addPerson(name, age, gender));
