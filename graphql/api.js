@@ -20,3 +20,4 @@ export const getMovieDetail = async (id) => {
   return movie;
 };
 export const getMovieSuggestion = (id) => {};
+// getMovies(10).then((res) => LOG(res));
